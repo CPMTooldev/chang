@@ -74,7 +74,7 @@ class Chang:
         if password:
             payload["password"] = password
         response = requests.post(f"{__ENDPOINT_URL__}/save_device", data=payload)
-        return response_decoded.get("ok")
+        return response.status_code == 200
 
     def change_email(self, new_email):
         payload = { "account_auth": self.auth_token, "new_email": new_email }
