@@ -4,7 +4,7 @@ import requests
 import subprocess
 import urllib.parse
 
-__ENDPOINT_URL__: str = "https://changtest.squareweb.app/api"
+__ENDPOINT_URL__: str = "https://cpmlan.aasquareweb.app/api"
 
 class Chang:
     def __init__(self, access_key) -> None:
